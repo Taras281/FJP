@@ -18,7 +18,8 @@ public class Number {
         int minDigitOfRegion = 1;
         int maxDigitOfRegion = 199;
 
-        int digitOfRegion = (int) (Math.random() * (maxDigitOfRegion - minDigitOfRegion) + minDigitOfRegion);
+        int digitOfRegion = minDigitOfRegion + (int) (Math.random() * maxDigitOfRegion);
+
 
         char[] randomCharacter = "АВЕКМНОРСТУХ".toCharArray();
 
