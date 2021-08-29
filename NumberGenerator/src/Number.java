@@ -19,8 +19,13 @@ public class Number {
         int maxDigitOfRegion = 199;
 
         int digitOfRegion = minDigitOfRegion + (int) (Math.random() * maxDigitOfRegion);
-
-
+        String region = Integer.toString(digitOfRegion);
+        String nullCharacter = "0";
+        if (region.length() == 1) {
+            region = nullCharacter + nullCharacter + region;
+        } else if (region.length() == 2) {
+            region = nullCharacter + region;
+        }
         char[] randomCharacter = "АВЕКМНОРСТУХ".toCharArray();
 
         for (int i = 0; i < 3; i++) {
@@ -32,7 +37,7 @@ public class Number {
         secondRandomDigit = (int) (Math.random() * maxAmountOfNumber);
         thirdRandomDigit = (int) (Math.random() * maxAmountOfNumber);
 
-        carNumber = firstRandomDigit + charactersForNumber + secondRandomDigit + thirdRandomDigit + digitOfRegion;
+        carNumber = firstRandomDigit + charactersForNumber + secondRandomDigit + thirdRandomDigit + region;
         return carNumber;
     }
 }
