@@ -20,6 +20,6 @@
         <property name="hbm2ddl.update">validate</property>
         <mapping class="Student"/> <!-- our tables in Data Base -->
         <mapping class="Faculty"/>
-        <mapping  class="StudentsFaculties"/>
+        <mapping class="StudentsFaculties"/>
     </session-factory>
 </hibernate-configuration>

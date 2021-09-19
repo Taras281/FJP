@@ -17,7 +17,7 @@ public class Student {
 
   @Setter @Getter private int age;
 
-  @ManyToOne
+  @ManyToOne(fetch = FetchType.LAZY)
   @Getter
   @Setter
   @JoinTable(
@@ -28,6 +28,6 @@ public class Student {
 
   @Override
   public String toString() {
-    return name;
+    return name + " - " + age;
   }
 }
