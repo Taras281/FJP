@@ -6,9 +6,13 @@ public class Main {
   public static void main(String[] args) {
 
     try (Session session = Hibernate.createSessionFactory().openSession()) {
-      String hql = "From " + Student.class.getSimpleName() + " WHERE age > 23";
-      List<Student> students = session.createQuery(hql).getResultList();
-      students.forEach(System.out::println);
+      Faculty faculty = session.get(Faculty.class, 1);
+   Student student = new Student();
+   student.setId(16);
+   student.setName("Maxim Vlasov");
+   student.setAge(23);
+   student.setFaculty(faculty);
+   session.save(student);
     }
   }
 }
