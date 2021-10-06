@@ -53,13 +53,7 @@ public class Bank {
   }
 
   public synchronized long getBalance(String accountNum) {
-    if (accounts.get(accountNum).getStatus()) {
-      System.out.println("Счет " + accountNum + " заблокирован.");
-      return 0;
-    } else {
-      System.out.println(accountNum + " - " + accounts.get(accountNum).getMoney() + " руб.");
       return accounts.get(accountNum).getMoney();
-    }
   }
 
   public synchronized long getSumAllAccounts() {
