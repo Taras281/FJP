@@ -11,11 +11,7 @@ public class Account {
   }
 
   public long getMoney() {
-    if (getStatus()) {
-      return 0;
-    } else {
       return money;
-    }
   }
 
   public void setMoney(long money) {
@@ -28,6 +24,7 @@ public class Account {
 
   public void blockedAccount() {
     isBlocked = true;
+    setMoney(0);
   }
 
   public boolean getStatus() {
