@@ -13,11 +13,9 @@ public class Main {
             new Runnable() {
               @Override
               public void run() {
-                  bank.transfer(firstClient.getAccNumber(), secondClient.getAccNumber(), 100);
-                    bank.transfer(secondClient.getAccNumber(), firstClient.getAccNumber(), 100);
-                  bank.getBalance(firstClient.getAccNumber());
-                  bank.getBalance(secondClient.getAccNumber());
-                  System.out.println(Thread.currentThread().getName());
+                bank.transfer(firstClient.getAccNumber(), secondClient.getAccNumber(), 100);
+                bank.transfer(secondClient.getAccNumber(), firstClient.getAccNumber(), 100);
+                System.out.println(Thread.currentThread().getName());
               }
             });
 
@@ -33,8 +31,6 @@ public class Main {
                   }
                   bank.transfer(secondClient.getAccNumber(), firstClient.getAccNumber(), 100);
                   bank.transfer(firstClient.getAccNumber(), secondClient.getAccNumber(), 100);
-                  bank.getBalance(firstClient.getAccNumber());
-                  bank.getBalance(secondClient.getAccNumber());
                   System.out.println(Thread.currentThread().getName());
               }
             });
