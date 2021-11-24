@@ -1,62 +1,72 @@
 package main;
 
 import main.model.Task;
+import main.model.TaskRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 public class ToDoController {
 
+    @Autowired
+    private TaskRepository taskRepository;
+
     @PostMapping("/toDo/")
-    public synchronized int addTask(Task task) {
-        return Storage.addToDo(task);
+    public int addTask(Task task) {
+        Task newTask = taskRepository.save(task);
+        return newTask.getId();
     }
 
     @GetMapping("/toDo/")
-    public synchronized List<Task> showAllTasks() {
-        return Storage.getAllTusks();
+    public List<Task> showAllTasks() {
+        Iterable<Task> taskIterable = taskRepository.findAll();
+        ArrayList<Task> tasks = new ArrayList<>();
+        for (Task task : taskIterable) {
+            tasks.add(task);
+        }
+        return tasks;
     }
 
     @GetMapping("/toDo/{id}")
-    public synchronized ResponseEntity getTask(@PathVariable int id) {
-        Task task = Storage.getTask(id);
-        if (task == null) {
+    public ResponseEntity getTask(@PathVariable Integer id) {
+        Optional<Task> optionalTask = taskRepository.findById(id);
+        if (!taskRepository.existsById(id)) {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body(null);
         } else {
-            return new ResponseEntity(task, HttpStatus.OK);
+            return new ResponseEntity(optionalTask.get(), HttpStatus.OK);
         }
     }
 
     @DeleteMapping("/toDo/")
-    public synchronized void deleteAllTasks() {
-        Storage.deleteAllTasks();
+    public ResponseEntity deleteAllTasks() {
+        taskRepository.deleteAll();
+        return new ResponseEntity(HttpStatus.OK);
     }
-
 
     @DeleteMapping("/toDo/{id}")
-    public synchronized ResponseEntity deleteTask(@PathVariable int id) {
-        Task task = Storage.getTask(id);
-        if (task == null) {
+    public ResponseEntity deleteTask(@PathVariable Integer id) {
+        if (!taskRepository.existsById(id)) {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body(null);
         } else {
-            Storage.deleteTask(id);
+            taskRepository.deleteById(id);
             return new ResponseEntity(HttpStatus.OK);
         }
     }
+
 
     @PatchMapping("/toDo/{id}")
-    public synchronized ResponseEntity changeTask(@PathVariable int id, Task newTask) {
-        Task task = Storage.getTask(id);
-        if (task == null) {
+    public ResponseEntity changeTask(@PathVariable Integer id, Task task) {
+        if (!taskRepository.existsById(id)) {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body(null);
         } else {
-            Storage.changeTask(id, newTask);
+            taskRepository.save(task);
             return new ResponseEntity(HttpStatus.OK);
         }
     }
-
-
 }
