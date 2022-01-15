@@ -1,11 +1,19 @@
-public class Main {
+
+/**
+ * Автор: https://github.com/VlasovM
+ * В данной задаче сделаем более сложные запросы нереляционной базы данных MongoDB. А именно - агрегацию.
+ * Более подробная информация по решению задачки:
+ * https://vk.com/@javlasov-agregaciya-dannyh-mondodb
+ */
+
+public class AggregationMongoDB {
 
     public static void main(String[] args) {
         MongoStorage mongo = new MongoStorage();
         mongo.init();
         System.out.println("COMMANDS: \n add_shop name | add_product name price | expose_product name product name shop | " +
                 "show_collections | show_elements name collection \n | clear_collection name collection" +
-                "| show_statistic name shop \n");
+                "| show_statistic \n");
 
         while(true) {
             String inputString = UserInput.getLine();
