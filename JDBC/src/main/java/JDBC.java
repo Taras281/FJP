@@ -4,7 +4,7 @@ import java.sql.*;
  * Автор: https://github.com/VlasovM
  * В данной задаче знакомимся с простой библиотекой для работы с SQL - JDBC. Делаем простые запросы.
  * Более подробная информация по решению задачки:
- * https://vk.com/@javlasov-agregaciya-dannyh-mondodb
+ * https://vk.com/@javlasov-znakomimsya-s-jdbc-i-sozdaem-zaprosy-v-idea
  */
 
 public class JDBC {
