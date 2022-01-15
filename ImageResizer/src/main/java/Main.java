@@ -1,5 +1,13 @@
 import java.io.File;
 
+/**
+ * Автор: https://github.com/VlasovM
+ * Наиболее простой пример работы многопоточнсти. Разделяем задачку на 4 части - 4 потока,
+ * которые работают одновременно.
+ * Более подробная информация по решению задачки:
+ * https://vk.com/@javlasov-znakomstvo-s-mnogopotochnostu
+ */
+
 public class Main {
 
   private static final String SOURCE_FOLDER = "C:\\Users\\79153\\Desktop\\Source folder";
