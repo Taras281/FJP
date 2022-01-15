@@ -1,7 +1,15 @@
 import java.util.*;
 import java.util.concurrent.ForkJoinPool;
 
-public class Main {
+/**
+ * Автор: https://github.com/VlasovM
+ * В данной задаче познакомимся с понятием рекурсия.
+ * Для более легкого и четкого понимания лучше решить задачку на вычисление факториала с помощью рекурсии.
+ * Более подробная информация по решению задачки:
+ * https://vk.com/@javlasov-forkjoinpool-i-chto-takoe-recursive-task
+ */
+
+public class Recursion {
 
   public static void main(String[] args) {
     Node root = new Node(List.of("10", "40"));
