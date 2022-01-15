@@ -1,5 +1,12 @@
 import org.hibernate.Session;
-import java.util.List;
+
+/**
+ * Автор: https://github.com/VlasovM
+ * В данной задаче работает с реляционной базой данных. Для работы с SQL существует библиотека
+ * Hibernate API, с которой сегодня познакомимся.
+ * Более подробная информация по решению задачки:
+ * https://vk.com/@javlasov-rabota-s-hibernate-api
+ */
 
 public class Main {
 
