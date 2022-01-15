@@ -5,7 +5,17 @@ import org.bson.Document;
 
 import java.util.List;
 
-public class Main {
+/**
+ * Автор: https://github.com/VlasovM
+ * В данной задаче знакомимся с нереляционной базой данных mondoDB. Делаем простые запросы из CVS файла.
+ * Более подробная информация по решению задачки:
+ * https://vk.com/@javlasov-nerelyacionnaya-baza-dannyh-mondodb
+ * Как работать с CSV файлами:
+ * https://vk.com/@javlasov-rabota-s-csv-failami-ch1
+ * https://vk.com/@javlasov-rabota-s-csv-failami-ch2
+ */
+
+public class SimpleMongoDB {
 
   private static final String pathToCsv = "src/main/resources/mongo.csv";
 
@@ -26,7 +36,7 @@ public class Main {
 
     System.out.println("Студенты, чей возраст старше 40:");
     for (Document doc : iterableGteForty) {
-      System.out.println(doc);
+      System.out.println(doc.getString("name") + " - " + doc.getString("age"));
     }
 
     System.out.println(
