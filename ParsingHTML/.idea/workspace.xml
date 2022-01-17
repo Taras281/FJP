@@ -1,29 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="fdd642f6-926b-42a9-8419-377238b25d99" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MoscowMetroParsing/.idea/libraries/jsoup_1_14_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MoscowMetroParsing/.idea/runConfigurations.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/For_Blog.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/json_simple_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/jsoup_1_14_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/jsoup_1_14_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MoscowMetroParsing/.idea/libraries/jsoup_1_14_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MoscowMetroParsing/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MoscowMetroParsing/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MoscowMetroParsing/MoscowMetroParsing.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../MoscowMetroParsing/MoscowMetroParsing.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MoscowMetroParsing/src/JsonCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MoscowMetroParsing/src/JsonCreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MoscowMetroParsing/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MoscowMetroParsing/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MoscowMetroParsing/src/core/Station.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MoscowMetroParsing/src/core/Station.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ParsingHTML.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParsingHTML.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ParsingHTML.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ParsingHTML.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ParsingHTML.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -37,7 +35,25 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RunManager">
+    <configuration name="ParsingHTML" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ParsingHTML" />
+      <module name="ParsingHTML" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ParsingHTML" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -49,5 +65,16 @@
       <updated>1630139349005</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

@@ -1,24 +1,21 @@
-import java.io.BufferedOutputStream;
-import java.io.FileOutputStream;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.net.URL;
-import org.jsoup.Jsoup;
-import org.jsoup.nodes.Document;
-import org.jsoup.nodes.Element;
+import java.io.IOException;
 
-public class Main {
+/**
+ * Автор: https://github.com/VlasovM
+ * В данной задаче поймем, что такое парсинг и как скачать картинки с разных сайтов.
+ * Приложение было обновлено enum, поэтому в статье могут быть чуть не точная информация.
+ * Более подробная информация по решению задачки:
+ * https://vk.com/@javlasov-rabota-s-html-failami-s-pomoschu-jsoup-api
+ */
 
-  private static final String PATH_FOR_IMG = "ParsingHTML/images/";
+public class ParsingHTML {
 
   public static void main(String[] args) {
-
-
-    String htmlFile = parseFile("https://lenta.ru/");
-    //    String htmlFile = parseFile("https://pikabu.ru/");
-    //    String htmlFile = parseFile("https://ria.ru/");
+    try {
+      Parser parser = new Parser();
+      parser.parsingHTML(URL.RIA.getUrl());
+    } catch (IOException ioException) {
+      ioException.printStackTrace();
+    }
   }
-
-  public static String parseFile(String path) {
-
 }
