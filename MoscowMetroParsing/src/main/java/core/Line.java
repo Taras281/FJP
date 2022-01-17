@@ -1,8 +1,5 @@
 package core;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Line {
 
   private final String number;
@@ -21,4 +18,8 @@ public class Line {
     return name;
   }
 
+  @Override
+  public String toString() {
+    return name;
+  }
 }
