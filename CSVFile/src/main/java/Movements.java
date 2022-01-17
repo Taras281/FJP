@@ -4,8 +4,8 @@ import java.util.List;
 
 public class Movements {
 
-  static double income = 0.0;
-  static double expense = 0.0;
+  private static double income = 0.0;
+  private static double expense = 0.0;
 
   public Movements(String pathMovementsCsv) {
 
@@ -20,16 +20,14 @@ public class Movements {
             income += Double.parseDouble(fragments[6]);
             expense += Double.parseDouble(fragments[7]);
           } else if (fragments.length == 9) {
-            if (fragments[6].startsWith("\"")) { //income = double
+            if (fragments[6].startsWith("\"")) { // income = double
               String strIncome;
-              strIncome = fragments[6].replace("\"", "") + "."
-                  + fragments[7].replace("\"", "");
+              strIncome = fragments[6].replace("\"", "") + "." + fragments[7].replace("\"", "");
               income += Double.parseDouble(strIncome);
               expense += Double.parseDouble(fragments[8]);
-            } else if (fragments[7].startsWith("\"")) { //expense = double
+            } else if (fragments[7].startsWith("\"")) { // expense = double
               String strExpense;
-              strExpense = fragments[7].replace("\"", "") + "."
-                  + fragments[8].replace("\"", "");
+              strExpense = fragments[7].replace("\"", "") + "." + fragments[8].replace("\"", "");
               income += Double.parseDouble(fragments[6]);
               expense += Double.parseDouble(strExpense);
             }
@@ -38,11 +36,9 @@ public class Movements {
           i++;
         }
       }
-    } catch (
-        Exception exception) {
+    } catch (Exception exception) {
       exception.printStackTrace();
     }
-
   }
 
   public double getExpenseSum() {

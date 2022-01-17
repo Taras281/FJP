@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fdd642f6-926b-42a9-8419-377238b25d99" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ParsingHTML.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ParsingHTML.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ParsingHTML.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ParsingHTML.java" afterDir="false" />
-    </list>
+    <list default="true" id="fdd642f6-926b-42a9-8419-377238b25d99" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -76,5 +71,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
