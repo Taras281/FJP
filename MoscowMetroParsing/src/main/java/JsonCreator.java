@@ -64,28 +64,23 @@ public class JsonCreator {
     JSONObject jsonObjectStations = new JSONObject();
     JSONArray jsonArrayLines = new JSONArray();
 
-    for (int i = 0; i < lines.size(); i++) {
+    Set<Line> linesInMapStation = stations.keySet();
+    for (Line line : linesInMapStation) {
       JSONArray innerJsonArrayStations = new JSONArray();
-      Set<Line> lines = stations.keySet();
-      for (Line line : lines) {
-        List<Station> stationsList = stations.get(line);
-        for (int j = 0; j < stationsList.size(); j++) {
-          String station = stationsList.get(j).getName().trim();
-          innerJsonArrayStations.add(station);
-        }
-        jsonObjectStations.put(line, innerJsonArrayStations);
+      List<Station> stationsList = stations.get(line);
+      for (int j = 0; j < stationsList.size(); j++) {
+        String station = stationsList.get(j).getName().trim();
+        innerJsonArrayStations.add(station);
       }
+      jsonObjectStations.put(line, innerJsonArrayStations);
     }
 
-    for (int i = 0; i < lines.size(); i++) {
+    Set<String> numbersLine = lines.keySet();
+    for (String number : numbersLine) {
       JSONObject innerJsonObjectLines = new JSONObject();
-      Set<String> numbersLine = lines.keySet();
-
-      for (String number : numbersLine) {
-        String nameLine = lines.get(number).getName();
-        innerJsonObjectLines.put("Номер линии:", number);
-        innerJsonObjectLines.put("Название линии:", nameLine);
-      }
+      String nameLine = lines.get(number).getName();
+      innerJsonObjectLines.put("Номер линии:", number);
+      innerJsonObjectLines.put("Название линии:", nameLine);
       jsonArrayLines.add(innerJsonObjectLines);
     }
     mainJsonObject.put("Станции", jsonObjectStations);
