@@ -1,13 +1,32 @@
+# Домашние задания по курсу Java-Developer от Skillbox | Home tasks for the Java-Developer course from Skillbox.
+____
+
 RU:
 
-В этом проекте показываю свой путь изучения языка JAVA. Тут есть различные работы с Java Core, SQL, Redis, MondoBD. Задачи показывают лишь поверхностное знакомство с темами, но этого хватит на момент ознакомления. В каждом проекте в гланом классе представлено короткое описание. Более подробное описание по ссылке в этом же описании. Репозиторий был обновлен, исправлено несколько мелких и пару серьёзных ошибок и наведен порядок, информация в статьях и сам код могут отличаться. При возникновении вопросов буду рад на них ответить.
+В данном репозитории решаются домашние задачки из модулей курса Java-Developer. Затрагиваются основные темы: Core, OOP, SQL, NoSQL, Multithreading, Spring. 
+Задачи не имеют большого объема кода и решение во многих аспектах выглядит довольно тривиальным. Я не претендую на звание чистоты кода, ведь в данном проекте для меня было главное решить задачки в установленный срок.
 
-Ссылка на статьи: https://vk.com/@javlasov
-Связаться со мной можно тут: https://t.me/JaVlasov
+В каждой задаче есть краткое описание того, что нужно сделать. 
+
+Для запуска понадобится:
+
+ - Среда разработки (Intelij IDEA, Eclipse)
+ - Сборщик проектов (Maven)
+ - Набор JDK 11
+
+По всем вопросам можно писать мне в телеграмме: https://t.me/JaVlasov
 
 EN: 
 
-This project shows various works with Java Core, SQL, Redis, MondoBD. The tasks show only a superficial acquaintance with the topics, but this is enough for the time of acquaintance. Each project in the main class has a brief description. For a more detailed description, follow the link in the same description. The repository has been updated, several minor and a couple of serious errors have been fixed and order has been restored, the information in the articles and the code itself may differ. If you have any questions, I will be happy to answer them.
+In this repository, homework tasks from the modules of the Java-Developer course are solved. The main topics are covered: Core, OOP, SQL, NoSQL, Multithreading, Spring.
+The tasks do not have a large amount of code and the solution in many aspects looks quite trivial. I do not pretend to be the purity of the code, because in this project, the main thing for me was to solve the puzzles in a timely manner.
 
-Link to articles: https://vk.com/@javlasov
+Each task has a brief description of what needs to be done.
+
+To start, you will need:
+
+- Development Environment (Intelij IDEA, Eclipse)
+- Project Builder (Maven)
+- JDK 11 kit
+
 Contact with me: https://t.me/JaVlasov
